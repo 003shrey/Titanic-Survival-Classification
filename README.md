@@ -55,6 +55,11 @@ cd Titanic-Survival-Classification
 
 2. Install required dependencies:
 ```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+```bash
 pip install numpy pandas matplotlib seaborn scikit-learn jupyter
 ```
 
@@ -91,7 +96,8 @@ The notebook is well-structured with clear sections for each phase of the machin
 The dataset is split into training (80%) and testing (20%) sets. Multiple classification algorithms are trained and evaluated:
 
 - **Logistic Regression**: Linear classification baseline
-- **Random Forest Classifier**: Ensemble learning with decision trees
+- **K-Nearest Neighbors (KNN)**: Instance-based learning with k=5 neighbors
+- **Naive Bayes**: Probabilistic classifier using Gaussian distribution
 - **Decision Tree Classifier**: Single tree-based classification
 - **Support Vector Machine (SVM)**: Kernel-based classification with RBF kernel
 
@@ -102,7 +108,8 @@ The dataset is split into training (80%) and testing (20%) sets. Multiple classi
 | Model | Accuracy | Key Observations |
 |-------|----------|-----------------|
 | Logistic Regression | ~80.3% | Strong baseline performance with interpretable results |
-| Random Forest | ~81.5% | Improved accuracy through ensemble learning |
+| K-Nearest Neighbors | ~77.5% | Instance-based learning with distance metrics |
+| Naive Bayes | ~80.3% | Fast probabilistic classifier with good performance |
 | Decision Tree | ~77.0% | Simpler model with moderate performance |
 | **Support Vector Machine** | **~82.6%** | **Best performing model** |
 
